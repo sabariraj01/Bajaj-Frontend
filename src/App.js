@@ -20,7 +20,7 @@ const JsonProcessorApp = () => {
         return;
       }
 
-      const response = await axios.post('http://localhost:3000/bfhl', parsedJson);
+      const response = await axios.post('https://bajaj-backend-pnlz.onrender.com/bfhl', parsedJson);
       setServerResponse(response.data);
       setErrorMessage(null);
     } catch (error) {
